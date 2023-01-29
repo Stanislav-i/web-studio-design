@@ -325,6 +325,12 @@ body {
 
 /* WHAT WE ARE DOING */
 
+@media screen and (max-width: 1199px) {
+    .wedo {
+        display: none;
+    }    
+}
+
 .wedo {
     padding-bottom: 120px;
 }

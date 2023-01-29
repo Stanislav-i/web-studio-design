@@ -4,45 +4,51 @@
         width: 1158px;
     }
 
-        .team>.container {
+    .wedo {
+   
+    }
+
+    .team>.container {
             width: 1158px;
-        }
+    }
+
     .team-list {
         display: flex;
         flex-wrap: nowrap;
         column-gap: 24px;
     }
+
     .team-litem {
         width: 100%;
     }
 
-.customers-litem {
-    width: calc((100% - 5*24px) / 6);
-}
+    .customers-litem {
+        width: calc((100% - 5*24px) / 6);
+    }
 
-.footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
-.footer-flex {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: start;
-    gap: 0px;
-}
+    .footer-flex {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 0px;
+    }
 
-.footer-logo-text {
-    margin-right: 120px;
-}
+    .footer-logo-text {
+        margin-right: 120px;
+    }
 
-.footer-socmedia {
-    margin-right: 80px;
-}
+    .footer-socmedia {
+        margin-right: 80px;
+    }
 
-.footer-subscribe-wrap {
-    width: 100%;
-}
+    .footer-subscribe-wrap {
+        width: 100%;
+    }
 
 }
