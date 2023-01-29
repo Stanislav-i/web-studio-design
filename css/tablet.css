@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 582px;
+    }
+
+        .team>.container {
+            width: 582px;
+        }
+
+    .team {
+        padding-bottom: 104px;
+    }
+
+    .team-list {
+        justify-content: space-between;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+    
+    .team-litem {
+        width: calc((100% - 30px) / 2);
+    }
+
+.customers-list {
+    column-gap: 24px;
+}
+
+.customers-litem {
+    width: calc((100% - 48px) / 3);
+}
+
+
+.footer-flex {
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.footer-logo-text > .header-logo {
+    margin-right: 0;
+    justify-content: start;
+}
+
+.footer-socmedia-text {
+    display: block;
+}
+
+.footer-subscribe-label {
+    display: block;
+}
+
+.footer-subscribe-wrap {
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: 453px;
+}
+
+}
