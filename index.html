@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-flex">
             <nav class="header-nav">
                 <a class="header-logo link" href="./index.html">
@@ -40,8 +40,78 @@
                 <li class="header-contacts-litem"><a href="tel:+11(000)111-11-11" class="contact-link link">+11 (000)
                         111-11-11</a></li>
             </ul>
+            <button type="button" class="menu-open" data-burger-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <!-- MOBILE MENU -->
+        <div class="burger is-hidden" data-burger>
+            <div class="burger-container">
+                <button type="button" class="menu-close" data-burger-close>
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-burger"></use>
+                    </svg>
+                </button>
+                <div class="burger-top">
+                    <ul class="burger-list list">
+                        <li class="burger-litem">
+                            <a class="burger-link link current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="burger-litem">
+                            <a class="burger-link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="burger-litem">
+                            <a class="burger-link link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="burger-bottom">
+                    <ul class="burger-contacts list">
+                        <li class="burger-tel-litem">
+                            <a href="tel:+11(000)111-11-11" class="contact-link link">+11 (000)111-11-11</a>
+                        </li>
+                        <li class="burger-mail-litem">
+                            <a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="burger-soc-list list">
+                        <li class="team-soc-litem">
+                            <a href="" class="team-soc-link link">
+                                <svg class="team-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram-card"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-litem">
+                            <a href="" class="team-soc-link link">
+                                <svg class="team-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter-card"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-litem">
+                            <a href="" class="team-soc-link link">
+                                <svg class="team-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook-card"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-litem">
+                            <a href="" class="team-soc-link link">
+                                <svg class="team-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedin-card"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
 
     <main>
 
@@ -102,7 +172,10 @@
                 <h2 class="team-main-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-litem">
-                        <img class="images" src="./images/img1.jpg" alt="Mark Guerrero" width="264">
+                        <img class="images" srcset="
+                        ./images/img1.jpg 1x, 
+                        ./images/img1-2x.jpg 2x
+                        " src="./images/img1.jpg" alt="Mark Guerrero" width="264">
                         <div class="team-card-content">
                             <h3 class="team-title title">Mark Guerrero</h3>
                             <p class="team-text text">Product Designer</p>
@@ -139,7 +212,10 @@
                         </div>
                     </li>
                     <li class="team-litem">
-                        <img class="images" src="./images/img2.jpg" alt="Tom Ford" width="264">
+                        <img class="images" srcset="
+                        ./images/img2.jpg 1x, 
+                        ./images/img2-2x.jpg 2x
+                        " src="./images/img2.jpg" alt="Tom Ford" width="264">
                         <div class="team-card-content">
                             <h3 class="team-title title">Tom Ford</h3>
                             <p class="team-text text">Frontend Developer</p>
@@ -176,7 +252,10 @@
                         </div>
                     </li>
                     <li class="team-litem">
-                        <img class="images" src="./images/img3.jpg" alt="Camila Garcia" width="264">
+                        <img class="images" srcset="
+                        ./images/img3.jpg 1x, 
+                        ./images/img3-2x.jpg 2x
+                        " src="./images/img3.jpg" alt="Camila Garcia" width="264">
                         <div class="team-card-content">
                             <h3 class="team-title title">Camila Garcia</h3>
                             <p class="team-text text">Marketing</p>
@@ -213,7 +292,10 @@
                         </div>
                     </li>
                     <li class="team-litem">
-                        <img class="images" src="./images/img4.jpg" alt="Daniel Wilson" width="264">
+                        <img class="images" srcset="
+                        ./images/img4.jpg 1x, 
+                        ./images/img4-2x.jpg 2x
+                        " src="./images/img4.jpg" alt="Daniel Wilson" width="264">
                         <div class="team-card-content">
                             <h3 class="team-title title">Daniel Wilson</h3>
                             <p class="team-text text">UI Designer</p>
@@ -430,6 +512,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
 
 </body>
 

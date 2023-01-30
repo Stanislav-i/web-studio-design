@@ -107,6 +107,13 @@ body {
 .header-flex {
     display: flex;
     align-items: center;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .header-flex {
+    justify-content: space-between;
+    }
 }
 
 
@@ -133,75 +140,117 @@ body {
     color: var(--primary-title-color);
 }
 
+.header-list, 
+.header-contacts {
+    display: none;
+}
 
-.header-list {
+.menu-open {
+    width: 32px;
+    height: 22px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-open-icon {
+    stroke: var(--primary-title-color);
+}
+
+/*-----MOBILE MENU------*/
+
+.menu-close {
+    position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 24px;
+        height: 24px;
+        background: var(--close-button-bg);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms linear 0ms;
+}
+
+.burger {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.burger-container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: auto;
 }
 
-.header-litem {
-    padding-right: 40px;
+.burger-litem:not(:last-child) {
+    margin-bottom: 40px;
 }
 
-.header-litem:last-child {
-    padding-right: 0;
+.burger-list {
+    margin-bottom: 50px;
 }
 
-.header-link {
-    display: block;
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
+.burger-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--primary-title-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--accent-color);
 }
 
 .current {
-    position: relative;
     color: var(--pressed-state-color);
 }
 
-.current::after {
-    position: absolute;
-    left: 0;
-    top: 44px;
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: var(--pressed-state-color);
-    border-radius: 2px;
+.burger-contacts {
+    margin-bottom: 48px;
 }
 
-.header-contacts {
+.burger-tel-litem {
+    font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+}
+
+.burger-tel-litem>.link {
+    color: var(--accent-color)
+}
+
+.burger-mail-litem {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+     letter-spacing: 0.02em;
+}
+
+.burger-mail-litem>.link {
+        color: var(--primary-text-color)
+}
+
+.burger-soc-list {
     display: flex;
-    margin-left: auto;
+    gap: 56px;
 }
 
-.header-contacts-litem {
-    margin-right: 40px;
-}
-
-.header-contacts-litem:last-child {
-    margin-right: 0px;
-}
-
-.contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--accent-color);
+@media screen and (min-width: 768px) {
+    .menu-open {
+        display: none;
+    }
 }
 
 /* ---HERO--- */
@@ -209,25 +258,41 @@ body {
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people-office\ 1.jpg);
-    background-size: contain;
+        url(../images/people-office-mobile.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--primary-title-color);
     /*bgsize cover?    */
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-mobile-2x.jpg);
+    }
+}
+
+.hero>.container {
+    padding: 0;
+    width: 100%;
 }
 
 .hero-title {
     font-weight: 600;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--additional-title-color);
     margin-bottom: 48px;
-    width: 500px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
