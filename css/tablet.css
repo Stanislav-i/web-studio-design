@@ -106,8 +106,23 @@
         line-height: 1.07;
         max-width: 500px;
     }
+
+/* ---OUR PRINCIPLES--- */
+    .principles > .container {
+        width: 766px;
+    }
+        .principles-list {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px;
+        }
+
+        .principles-litem {
+            width: calc((100% - 24px) / 2);
+        }
+
 /* ---TEAM--- */
-    .team>.container {
+    .team > .container {
             width: 582px;
         }
 

@@ -7,13 +7,13 @@
         max-width: 320px;
         }
 
-    .hero >.container {
+    .hero > .container {
         width: 426px;
         padding-left: 15px;
         padding-right: 15px;
     }
 /* ---TEAM--- */
-    .team>.container {
+    .team > .container {
         width: 284px;
     }
 

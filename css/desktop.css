@@ -105,8 +105,46 @@
     .hero>.container {
         width: 1158px;
     }
+
+        /* ---OUR PRINCIPLES--- */
+        .principles>.container {
+            width: 1158px;
+        }
+    
+.principles {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.principles-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.principles-litem {
+    width: 264px;
+    margin-right: 24px;
+}
+
+.principles-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
+}
+
+.principles-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+        
 /* ---TEAM--- */
-    .team>.container {
+    .team > .container {
             width: 1158px;
     }
 

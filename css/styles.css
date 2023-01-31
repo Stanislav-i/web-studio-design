@@ -336,57 +336,71 @@ body {
 /* ---OUR PRINCIPLES--- */
 
 .principles {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .principles-list {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .principles-litem {
-    width: 264px;
-    margin-right: 24px;
+
 }
 
+@media screen and (min-width: 1200px) {
 .principles-litem::before {
-    display: block;
-    content: "";
-    height: 112px;
-    margin-bottom: 8px;
-    border-radius: 4px;
-    background-color: var(--secondary-bg-color);
-    background-repeat: no-repeat;
-    background-position: center;
+        display: block;
+        content: "";
+        height: 112px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        background-color: var(--secondary-bg-color);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .principles-litem.icon-group::before {
+        background-image: url(../images/Group.svg);
+
+    }
+
+    .principles-litem.icon-clock::before {
+        background-image: url(../images/clock\ 1.svg);
+    }
+
+    .principles-litem.icon-diagram::before {
+        background-image: url(../images/diagram\ 1.svg);
+    }
+
+    .principles-litem.icon-astronaut::before {
+        background-image: url(../images/astronaut\ 1.svg);
+    }
 }
 
-.principles-litem.icon-group::before {
-    background-image: url(../images/Group.svg);
-
-}
-
-.principles-litem.icon-clock::before {
-    background-image: url(../images/clock\ 1.svg);
-}
-
-.principles-litem.icon-diagram::before {
-    background-image: url(../images/diagram\ 1.svg);
-}
-
-.principles-litem.icon-astronaut::before {
-    background-image: url(../images/astronaut\ 1.svg);
-}
 
 .principles-litem:last-child {
     margin-right: 0px;
 }
 
 .principles-title {
-    margin-bottom: 8px;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        color: var(--primary-title-color);
 }
 
-.principles-text {}
+.principles-text {font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
 
 /* WHAT WE ARE DOING */
 
