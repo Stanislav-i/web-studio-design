@@ -140,6 +140,7 @@
     .principles-title {
         font-weight: 600;
         font-size: 20px;
+        text-align: left;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--primary-title-color);
