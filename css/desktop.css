@@ -5,9 +5,18 @@
     }
 
 /*-------- HEADER ---------*/
+
+.header>.container {
+    width: 1158px;
+}
+
 .header-flex {
     display: flex;
     align-items: center;
+}
+
+.header-logo {
+    margin-right: 77px;
 }
 
 .header-list {
@@ -56,6 +65,7 @@
 
 .header-contacts {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
 }
 
