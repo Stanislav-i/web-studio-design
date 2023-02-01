@@ -53,7 +53,6 @@ body {
     max-width: 100%;
     height: auto;
     width: 100%;
-
 }
 
 .title {
@@ -85,11 +84,9 @@ body {
 }
 
 .container {
-    /* width: 1158px; */
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
 }
 
 /* ---HEADER--- */
@@ -107,12 +104,11 @@ body {
 .header-flex {
     display: flex;
     align-items: center;
-    
 }
 
 @media screen and (max-width: 767px) {
     .header-flex {
-    justify-content: space-between;
+        justify-content: space-between;
     }
 }
 
@@ -140,7 +136,7 @@ body {
     color: var(--primary-title-color);
 }
 
-.header-list, 
+.header-list,
 .header-contacts {
     display: none;
 }
@@ -161,18 +157,18 @@ body {
 
 .menu-close {
     position: absolute;
-        top: 40px;
-        right: 40px;
-        width: 24px;
-        height: 24px;
-        background: var(--close-button-bg);
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background-color 250ms linear 0ms;
+    top: 40px;
+    right: 40px;
+    width: 24px;
+    height: 24px;
+    background: var(--close-button-bg);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms linear 0ms;
 }
 
 .burger {
@@ -221,10 +217,10 @@ body {
 
 .burger-tel-litem {
     font-weight: 600;
-        font-size: 36px;
-        line-height: 1.11;
-        text-transform: capitalize;
-        margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    margin-bottom: 40px;
 }
 
 .burger-tel-litem>.link {
@@ -233,13 +229,13 @@ body {
 
 .burger-mail-litem {
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-     letter-spacing: 0.02em;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .burger-mail-litem>.link {
-        color: var(--primary-text-color)
+    color: var(--primary-text-color)
 }
 
 .burger-soc-list {
@@ -273,7 +269,7 @@ body {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office-mobile-2x.jpg);
     }
@@ -346,12 +342,10 @@ body {
     gap: 72px;
 }
 
-.principles-litem {
-
-}
+.principles-litem {}
 
 @media screen and (min-width: 1200px) {
-.principles-litem::before {
+    .principles-litem::before {
         display: block;
         content: "";
         height: 112px;
@@ -386,20 +380,21 @@ body {
 }
 
 .principles-title {
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        margin-bottom: 8px;
-        color: var(--primary-title-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    color: var(--primary-title-color);
 }
 
-.principles-text {font-weight: 500;
+.principles-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--primary-text-color);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
 
 /* WHAT WE ARE DOING */
@@ -407,7 +402,7 @@ color: var(--primary-text-color);
 @media screen and (max-width: 1199px) {
     .wedo {
         display: none;
-    }    
+    }
 }
 
 .wedo {
@@ -508,7 +503,6 @@ or   .team-litem .team-soc-link:hover,
     height: 40px;
     margin-top: 4px;
     margin-bottom: 4px;
-
 }
 
 .team-soc-link {
@@ -555,7 +549,6 @@ or   .team-litem .team-soc-link:hover,
 .customers-litem {
     width: calc((100% - 16px) / 2);
     height: 88px;
-
 }
 
 .customers-link {
@@ -584,7 +577,6 @@ or   .team-litem .team-soc-link:hover,
     fill: #4D5AE5;
 }
 
-
 /* --FOOTER--- */
 
 .footer {
@@ -601,7 +593,7 @@ or   .team-litem .team-soc-link:hover,
     gap: 72px;
 }
 
-.footer-logo-text > .header-logo {
+.footer-logo-text>.header-logo {
     margin-right: 0;
     justify-content: center;
 }
@@ -619,9 +611,7 @@ or   .team-litem .team-soc-link:hover,
     margin-top: 16px;
 }
 
-.footer-socmedia {
-
-}
+.footer-socmedia {}
 
 .footer-socmedia-text {
     display: flex;
@@ -631,7 +621,6 @@ or   .team-litem .team-soc-link:hover,
     letter-spacing: 0.02em;
     color: var(--additional-title-color);
     margin-bottom: 16px;
-
 }
 
 .footer-socmedia-list {
@@ -672,7 +661,7 @@ or   .team-litem .team-soc-link:hover,
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--additional-title-color);
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
 
 .footer-subscribe-wrap {
@@ -723,7 +712,6 @@ or   .team-litem .team-soc-link:hover,
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-
 .subscribe-btn-icon {
     fill: var(--primary-btn-color);
     margin-left: 16px;
@@ -746,10 +734,6 @@ or   .team-litem .team-soc-link:hover,
     padding-top: 96px;
     padding-bottom: 120px;
 }
-
-.filters-main-title {}
-
-.visually-hidden {}
 
 .filters-list-btn {
     display: flex;
@@ -853,10 +837,6 @@ or   .team-litem .team-soc-link:hover,
     margin-bottom: 8px;
 }
 
-.filters-text {}
-
-.filter {}
-
 /* -- MODAL --*/
 
 .backdrop {
@@ -900,7 +880,6 @@ or   .team-litem .team-soc-link:hover,
     align-items: center;
     justify-content: center;
     transition: background-color 250ms linear 0ms;
-
 }
 
 .modal-close:hover,
@@ -917,7 +896,6 @@ or   .team-litem .team-soc-link:hover,
     fill: #000000;
     transition: fill 250ms linear 0ms;
 }
-
 
 .is-hidden {
     opacity: 0;
