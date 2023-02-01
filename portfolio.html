@@ -20,29 +20,99 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-flex">
-            <nav class="header-nav">
-                <a class="header-logo link" href="./index.html">
-                    web<span class="header-logo-part">studio</span>
-                </a>
+<header class="header">
+    <div class="container header-flex">
+        <nav class="header-nav">
+            <a class="header-logo link" href="./index.html">
+                web<span class="header-logo-part">studio</span>
+            </a>
 
-                <ul class="header-list list">
-                    <li class="header-litem"><a class="header-link link" href="./index.html">Studio</a></li>
-                    <li class="header-litem"><a class="header-link link current" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="header-litem"><a class="header-link link" href="">Contacts</a></li>
-                </ul>
-            </nav>
-
-            <ul class="header-contacts list">
-                <li class="header-contacts-litem"><a href="mailto:info@devstudio.com"
-                        class="contact-link link">info@devstudio.com</a></li>
-                <li class="header-contacts-litem"><a href="tel:+11(000)111-11-11" class="contact-link link">+11 (000)
-                        111-11-11</a></li>
+            <ul class="header-list list">
+                <li class="header-litem"><a class="header-link link current" href="./index.html">Studio</a></li>
+                <li class="header-litem"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                <li class="header-litem"><a class="header-link link" href="">Contacts</a></li>
             </ul>
+        </nav>
+
+        <ul class="header-contacts list">
+            <li class="header-contacts-litem"><a href="mailto:info@devstudio.com"
+                    class="contact-link link">info@devstudio.com</a></li>
+            <li class="header-contacts-litem"><a href="tel:+11(000)111-11-11" class="contact-link link">+11 (000)
+                    111-11-11</a></li>
+        </ul>
+        <button type="button" class="menu-open" data-burger-open>
+            <svg class="menu-open-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+    </div>
+    <!-- MOBILE MENU -->
+    <div class="burger is-hidden" data-burger>
+        <div class="burger-container">
+            <button type="button" class="menu-close" data-burger-close>
+                <svg class="menu-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-burger"></use>
+                </svg>
+            </button>
+            <div class="burger-top">
+                <ul class="burger-list list">
+                    <li class="burger-litem">
+                        <a class="burger-link link current" href="./index.html">Studio</a>
+                    </li>
+                    <li class="burger-litem">
+                        <a class="burger-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="burger-litem">
+                        <a class="burger-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="burger-bottom">
+                <ul class="burger-contacts list">
+                    <li class="burger-tel-litem">
+                        <a href="tel:+11(000)111-11-11" class="contact-link link">+11 (000)111-11-11</a>
+                    </li>
+                    <li class="burger-mail-litem">
+                        <a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="burger-soc-list list">
+                    <li class="team-soc-litem">
+                        <a href="" class="team-soc-link link">
+                            <svg class="team-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram-card"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-litem">
+                        <a href="" class="team-soc-link link">
+                            <svg class="team-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter-card"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-litem">
+                        <a href="" class="team-soc-link link">
+                            <svg class="team-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook-card"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-litem">
+                        <a href="" class="team-soc-link link">
+                            <svg class="team-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin-card"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </div>
+
+</header>
+
     <main>
         <!-- filters -->
         <section class="filters">
@@ -276,6 +346,7 @@
             
         </div>
     </footer>
+    <script src="./js/burger.js"></script>
 
 </body>
 

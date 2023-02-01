@@ -101,6 +101,13 @@ body {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+@media screen and (max-width: 479px) {
+.header>.container {
+        max-width: 426px;
+    }
+}
+
+
 .header-flex {
     display: flex;
     align-items: center;
@@ -280,6 +287,12 @@ body {
     width: 100%;
 }
 
+@media screen and (max-width: 479px) {
+    .hero>.container {
+        max-width: 426px;
+    }
+}
+
 .hero-title {
     font-weight: 600;
     font-size: 36px;
@@ -334,6 +347,12 @@ body {
 .principles {
     padding-top: 96px;
     padding-bottom: 96px;
+}
+
+@media screen and (max-width: 479px) {
+    .principles>.container {
+        max-width: 426px;
+    }
 }
 
 .principles-list {
