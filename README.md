@@ -8,6 +8,6 @@ HTML + CSS individual project
 
 ### Stack's used:
 [![HTML](https://img.shields.io/static/v1?label=&message=HTML&color=2ea44f)](https://)
-[![CSS](https://img.shields.io/static/v1?label=&message=HTML&color=2ea44f)](https://)
+[![CSS](https://img.shields.io/static/v1?label=&message=CSS&color=2ea44f)](https://)
 [![Git](https://img.shields.io/static/v1?label=&message=Git&color=2ea44f)](https://)
 
