@@ -757,6 +757,7 @@ or   .team-litem .team-soc-link:hover,
 .filters-list-btn {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
@@ -798,6 +799,7 @@ or   .team-litem .team-soc-link:hover,
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    justify-content: center;
 }
 
 .filters-litem-img {
